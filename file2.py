@@ -21,5 +21,3 @@ print("Sum of two input numbers is:", sum)
 print("The difference of the two inputted numbers is:", difference)
 print("The product of two inputted numbers is:", product)
 print("The quotient of two inputted numbers is: %.2f" % quotient)
-
-#asdasd
