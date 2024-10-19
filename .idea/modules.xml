@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Barrita_PLDL01E.iml" filepath="$PROJECT_DIR$/.idea/Barrita_PLDL01E.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../PLDL01E/.idea/PLDL01E.iml" filepath="$PROJECT_DIR$/../PLDL01E/.idea/PLDL01E.iml" />
-    </modules>
-  </component>
-</project>
