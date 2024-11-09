@@ -33,8 +33,7 @@ class ServiceInfo:
 
 # Billing information class
 class BillingInfo:
-    def __init__(self, customer_type, bill_date, meter_reading_date, bill_period, due_date, total_kwh, total_amount):
-        self.customer_type = customer_type
+    def __init__(self, bill_date, meter_reading_date, bill_period, due_date, total_kwh, total_amount):
         self.bill_date = bill_date
         self.meter_reading_date = meter_reading_date
         self.bill_period = bill_period
@@ -44,7 +43,6 @@ class BillingInfo:
 
     def display(self):
         print("Billing Information:")
-        print(f"  Customer Type: {self.customer_type}")
         print(f"  Bill Date: {self.bill_date}")
         print(f"  Meter Reading Date: {self.meter_reading_date}")
         print(f"  Bill Period: {self.bill_period}")
@@ -103,14 +101,13 @@ service_address = input("Enter service address: ")
 service = ServiceInfo(service_id, rate, contract_name, service_address)
 
 # Input for billing information
-customer_type = input("Enter customer type: ")
 bill_date = input("Enter bill date: ")
 meter_reading_date = input("Enter meter reading date: ")
 bill_period = input("Enter bill period: ")
 due_date = input("Enter due date: ")
 total_kwh = float(input("Enter total kWh used: "))
 total_amount = float(input("Enter total current amount: "))
-billing = BillingInfo(customer_type, bill_date, meter_reading_date, bill_period, due_date, total_kwh, total_amount)
+billing = BillingInfo(bill_date, meter_reading_date, bill_period, due_date, total_kwh, total_amount)
 
 # Input for electricity bill computation
 previous_balance = float(input("Enter previous balance: "))
