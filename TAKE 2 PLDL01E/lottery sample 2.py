@@ -95,7 +95,7 @@ def auto_win_with_target(target):
                     f"📅 Draw Date: {datetime.now().strftime('%B %d, %Y')}\n"
                     f"🎯 Winning Digits: {''.join(map(str, draw))}\n"
                     f"🎫 Your Entry:     {''.join(map(str, user_digits))}\n\n"
-                    f"🎉 You WIN!"
+                    f"🎉 You WIN 5000!"
                 )
                 messagebox.showinfo(f"Auto Win - {digit_count}D Result", result_text)
                 break
@@ -209,7 +209,7 @@ def draw_game(autoplay=False):
             return
 
         draw = draw_digits(digit_count)
-        prize = "🎉 You WIN!" if user_digits == draw else "😢 Try again."
+        prize = "🎉 You win 5,000 Pesos" if user_digits == draw else "😢 Try again."
 
         result_text = (
             f"📅 Draw Date: {datetime.now().strftime('%B %d, %Y')}\n"
@@ -300,7 +300,7 @@ button_frame.pack(pady=20)
 draw_button = ttk.Button(button_frame, text="Draw", command=lambda: draw_game())
 draw_button.grid(row=0, column=0, padx=10)
 
-auto_button = ttk.Button(button_frame, text="Auto Win", command=open_auto_win_dialog)
+auto_button = ttk.Button(button_frame, text="Lucky Pick", command=open_auto_win_dialog)
 auto_button.grid(row=0, column=1, padx=10)
 
 auto_draw_button = ttk.Button(button_frame, text="Auto Draw", command=lambda: draw_game(autoplay=True))
